@@ -68,7 +68,7 @@ def edit(df):
 if st.button("TÌM KIẾM"):
     if option2 == "Coffee":
         # Đọc file csv
-        cf_df = pd.read_csv('coffee_data.csv', index_col=0)
+        cf_df = pd.read_csv('C:/Users/MSI/OneDrive/Python/Đồ án Python/data/coffee_data.csv', index_col=0)
         cf_df = edit(cf_df) 
         if option1:
             dem = 0
@@ -106,7 +106,7 @@ if st.button("TÌM KIẾM"):
                     break
     if option2 == "Nhà hàng":
         # Đọc file csv
-        cf_df = pd.read_csv('res_data.csv', index_col=0)
+        cf_df = pd.read_csv('C:/Users/MSI/OneDrive/Python/Đồ án Python/data/res_data.csv', index_col=0)
         cf_df = edit(cf_df) 
         if option1:
             dem = 0

@@ -1,5 +1,7 @@
 import streamlit as st
 import openai
+import sys
+sys.path.append('C:/Users/MSI/OneDrive/Python/Đồ án Python/')
 import openai_api_key
 from main import Text_To_Speech,Speech_To_Text # Sử dụng text_to_speech và speech_to_text từ file main.py
 

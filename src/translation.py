@@ -160,7 +160,7 @@ with col1:
                 break
 
 with col2:
-    image = Image.open('convert.jpg') 
+    image = Image.open('C:/Users/MSI/OneDrive/Python/Đồ án Python/images/convert.jpg') 
     st.image(image)
 with col3:
     option2 = st.selectbox(
