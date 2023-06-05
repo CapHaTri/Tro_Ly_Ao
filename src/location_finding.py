@@ -152,8 +152,3 @@ st.subheader(":green[Lưu ý khi sử dụng: ]")
 st.write("**Hỗ trợ tìm kiếm cách dịch vụ: Coffee, Nhà hàng - quán ăn, Billiards, Sân bóng đá, ...**")
 st.write("**Hệ thống đề xuất các địa điểm trong khu vực TP HCM**")
 st.write("**Danh sách được đưa ra dựa trên lượt đánh giá của khách hàng**" )
-
-
-
-
-  
