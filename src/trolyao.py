@@ -8,5 +8,6 @@ show_pages(
         Page("Q&A.py", "QUESTION AND ANSWER", ":books:"),
         Page("translation.py", "TRANSLATION", ":candy:"),
         Page("location_finding.py", "RECOMMENDED PLACE", ":🎈️:"),
+        Page("images.py", "RECOMMENDED IMAGES", ":💪:"),
     ]
 )
