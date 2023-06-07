@@ -5,7 +5,7 @@ sys.path.append('C:/Users/MSI/OneDrive/Python/Đồ án Python/')
 import openai_api_key
 from main import Text_To_Speech,Speech_To_Text # Sử dụng text_to_speech và speech_to_text từ file main.py
 
-openai.api_key = "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" # Tạo openai api key
+openai.api_key = "" # Tạo openai api key
 st.title(":blue[HỎI ĐÁP TẤT CẢ MỌI THỨ BẠN MUỐN ]") 
 
 if st.button('BẮT ĐẦU'):
