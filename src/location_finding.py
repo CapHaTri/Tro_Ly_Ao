@@ -142,6 +142,44 @@ if st.button("TÌM KIẾM"):
                     continue
                 if dem == 10:
                     break
+    if option2 == "Billards":
+        # Đọc file csv
+        cf_df = pd.read_csv('C:/Users/MSI/OneDrive/Python/Đồ án Python/data/bida_data.csv', index_col=0)
+        cf_df = edit(cf_df) 
+        if option1:
+            dem = 0
+            # Trích xuất thông tin theo lựa chọn của người dùng
+            for index, row in cf_df[cf_df['Địa Chỉ Rút Gọn'] == option1].iterrows():
+                name = row["Tên"]
+                address = row["Địa Chỉ"]
+                website = row["Website"]
+                SĐT = row["SĐT"]
+                review_count = row["Số lượt Review"]
+                review_average = row["Điểm đánh giá trung bình"]
+                images = row["images"]
+                urls = re.findall(r'https?://\S+', images)
+                # Lựa chọn nơi có số lượng review và điểm số phù hợp
+                if review_count >=0:
+                    st.subheader(str(dem + 1) + ". " +  name)
+                    col1,col2 = st.columns(2)
+                    with col1:
+                        st.image(urls[0][:-2])
+                    with col2:
+                        st.image(urls[1][:-2])
+                    st.markdown('##### 👉 Địa chỉ :  {}'.format(address))
+                    if website != 0 and website != "facebook.com":
+                        st.markdown('##### 👉 WEBSITE :  {}'.format(website)) 
+                    if SĐT != 0:
+                        st.markdown('##### 👉 SĐT :  {}'.format(SĐT))   
+                    if review_count != 0:
+                        st.markdown('##### 👉 Số lượt Review:  {}'.format(str(int(review_count))))
+                    if review_average != 0:
+                        st.markdown('##### 👉 Điểm đánh giá trung bình:  {}'.format(str(review_average)))
+                    dem +=1
+                else:
+                    continue
+                if dem == 10:
+                    break
     
 st.write("  ")
 st.write("  ")
